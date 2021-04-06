@@ -1,0 +1,23 @@
+:root {
+    --primary: #0d0d0d;
+}
+
+.submit-input {
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--primary);
+    padding: 8px 20px;
+}
+
+.submit-input:hover {
+    transition: all 0.3s ease-out;
+    background-color: #ce0e0e;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    padding: 6px 18px;
+}

@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT sans", sans-serif;
+}
+form {
+  max-width: 500px;
+  padding: 12px 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+label {
+  align-content: center;
+}
+
+.table-container {
+  display: block;
+  margin: 5rem 10rem;
+  /* justify-content: space-between; */
+  /* overflow: auto; */
+}
+.table {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  font-size: large;
+  color: white;
+  margin: 10px;
+  border: solid black;
+  border-radius: 5px;
+}
+.table-number {
+  height: px;
+  background-color: red;
+  border-bottom: solid black;
+}
+.table-img img {
+  width: 100%;
+  height: 200px;
+}
+
+/* .table-number {
+} */
+.table-type {
+  color: black;
+  font-weight: bolder;
+}
+
+.reservations {
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: black;
+  font-size: x-large;
+}
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal-hidden {
+  display: none;
+}
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.reservation-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 80%;
+  /*background-color: white;*/
+  /* padding: 3rem; */
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-date-container {
+  position: absolute;
+  color: royalblue;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+
+  /* transform: translate(0, -10%); */
+}
+.modal-date-picker {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-left: 39.5%;
+  margin-right: auto;
+  width: 140px;
+  background: white;
+}
+.modal-date-reservation {
+  position: relative;
+  width: 90%;
+  height: 88.5%;
+  color: #333;
+
+  overflow-y: scroll;
+}
+.modal-date-reservation table {
+  width: 100%;
+  align-items: center;
+}
+.modal-date-reservation td {
+  border: solid black;
+  border-width: 2px;
+  color: whitesmoke;
+}
+.date-active {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(3, 190, 6, 1) 0%,
+    rgba(113, 205, 89, 1) 29%,
+    rgba(0, 255, 102, 1) 100%
+  );
+}
+.date-busy {
+  background: linear-gradient(
+    90deg,
+    rgba(190, 3, 3, 1) 0%,
+    rgba(205, 89, 89, 1) 49%,
+    rgba(255, 42, 0, 1) 100%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.reservation-modal2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  background-color: white;
+  /* padding: 3rem; */
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 11;
+}
+.close-modal2 {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.modal-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 10;
+}
